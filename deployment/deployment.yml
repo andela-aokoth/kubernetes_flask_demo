@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world
+  labels:
+    # Project ID
+    app: hello-world-flask
+spec:
+  # Run two instances of our application
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world-flask
+    spec:
+      # Container Details
+      containers:
+        - name: hello-world-flask
+          image: gcr.io/hello-gcp-166110/hello-world:0.0.1
+          imagePullPolicy: Always
+          # Ports to expose
+          ports:
+          - containerPort: 8000
