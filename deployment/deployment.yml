@@ -16,7 +16,7 @@ spec:
       # Container Details
       containers:
         - name: hello-world-flask
-          image: us.gcr.io/hello-gcp-166110/hello-world:0.0.1
+          image: us.gcr.io/hello-gcp-2/hello-world-flask:0.0.1
           imagePullPolicy: Always
           # Expose Ports
           ports:
