@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  # Service name
+  # Service Name
   name: hello-world-flask
 spec:
   selector:

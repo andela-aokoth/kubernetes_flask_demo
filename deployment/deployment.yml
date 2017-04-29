@@ -6,7 +6,7 @@ metadata:
     # Project ID
     app: hello-world-flask
 spec:
-  # Run two instances of our application
+  # Run Two Instances Of Our Application
   replicas: 2
   template:
     metadata:
@@ -18,6 +18,6 @@ spec:
         - name: hello-world-flask
           image: gcr.io/hello-gcp-166110/hello-world:0.0.1
           imagePullPolicy: Always
-          # Ports to expose
+          # Expose Ports
           ports:
           - containerPort: 8000
